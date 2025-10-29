@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.FatalEnterprise.gen.cpp.obj": [
+			"FatalEnterprise.init.gen.cpp.obj",
+			"FatalEnterpriseGameModeBase.gen.cpp.obj"
+		]
+	}
+}

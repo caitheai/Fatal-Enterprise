@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FatalEnterprise",
+			"Path": "..\\Source\\FatalEnterprise.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FatalEnterpriseEditor",
+			"Path": "..\\Source\\FatalEnterpriseEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

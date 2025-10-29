@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\fatal-enterprise\\unreal\\fatalenterprise\\source\\fatalenterprise\\fatalenterprise.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\fatal-enterprise\\unreal\\fatalenterprise\\intermediate\\build\\win64\\x64\\fatalenterpriseeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "d:\\fatal-enterprise\\unreal\\fatalenterprise\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\fatalenterprise\\definitions.fatalenterprise.h",
+            "d:\\fatal-enterprise\\unreal\\fatalenterprise\\source\\fatalenterprise\\fatalenterprise.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
