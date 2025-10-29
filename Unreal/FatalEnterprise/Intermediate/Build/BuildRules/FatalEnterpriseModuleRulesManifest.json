@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"D:\\Fatal-Enterprise\\Unreal\\FatalEnterprise\\Source\\FatalEnterprise\\FatalEnterprise.Build.cs",
-		"D:\\Fatal-Enterprise\\Unreal\\FatalEnterprise\\Source\\FatalEnterprise.Target.cs",
-		"D:\\Fatal-Enterprise\\Unreal\\FatalEnterprise\\Source\\FatalEnterpriseEditor.Target.cs"
-	],
-	"EngineVersion": "5.6.1"
-}
