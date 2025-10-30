@@ -1,10 +1,18 @@
-#include <iostream>
+int data
 
-int main() {
-	std::cout << "Hello World!" << std::end1;
-	return 0;
-}
+/// DO NOT touch project files without talking to programmer
+/// Allowed asset types:
 
-// ^ Disregard Above
+".file"
+".uasset"
+".uproject"
+".ini"
+".bin"
+".txt"
+".list"
+".in"
+".pth"
+".ush"
 
-// DO NOT EDIT PROJECT FILES
+/// Please get all other file types clear with programmer (With the exception of .cpp)
+/// All .cpp Data Files contain info about folders + misc info and code.
