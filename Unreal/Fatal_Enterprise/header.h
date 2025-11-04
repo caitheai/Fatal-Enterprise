@@ -10,4 +10,4 @@
 
 // Direct all questions regarding Usage and Crediting to the following discord
 
-					" caithesai "
+					" caithesai " & "blazerburn"
