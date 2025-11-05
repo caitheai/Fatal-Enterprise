@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
-//Name: FatalEnterprise_Chase_Jeden.0029.ma
-//Last modified: Wed, Nov 05, 2025 02:41:46 PM
+//Name: FatalEnterprise_Chase_Jeden.0030.ma
+//Last modified: Wed, Nov 05, 2025 02:42:42 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -14,12 +14,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "1C692FA8-430A-84FD-A058-96844839F2BD";
+fileInfo "UUID" "75D549D1-4798-7555-483D-539B9E728FC8";
 createNode transform -s -n "persp";
 	rename -uid "9D064EED-43A0-1E9E-60E9-4693022F16BF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -2.7959011824781927 2.821033308863369 2.5301128222408211 ;
-	setAttr ".r" -type "double3" 61.200000000337774 3.1805546814635176e-15 2019.1999999997465 ;
+	setAttr ".t" -type "double3" -24.037686179116982 5.4806883937070117 14.397329694173841 ;
+	setAttr ".r" -type "double3" 62.400000000339418 3.1805546814635176e-15 2057.9999999996494 ;
 	setAttr ".rpt" -type "double3" -4.8713000234547489e-19 1.1544797064124201e-18 3.6050785529927687e-19 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "05CA8D05-4244-62EB-A242-A19A9F543FFB";
@@ -28,7 +28,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 4.1632660905527317;
+	setAttr ".coi" 26.436932733202426;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
@@ -38219,6 +38219,7 @@ createNode mesh -n "Light_SwitchShape" -p "Light_Switch";
 	setAttr ".cdvm[0]"  0 1 1;
 createNode transform -n "Motor";
 	rename -uid "DC380E78-4283-05EA-9F95-8CB7859864F0";
+	setAttr ".v" no;
 createNode transform -n "Screw_grp" -p "|Motor";
 	rename -uid "A542C5A5-438A-B7F2-5B0B-A58066FBFEB3";
 createNode transform -n "Screw_1" -p "Screw_grp";
@@ -46135,4 +46136,4 @@ connectAttr "groupId88.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId95.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId96.msg" ":initialShadingGroup.gn" -na;
 connectAttr "groupId127.msg" ":initialShadingGroup.gn" -na;
-// End of FatalEnterprise_Chase_Jeden.0029.ma
+// End of FatalEnterprise_Chase_Jeden.0030.ma
