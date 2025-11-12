@@ -8,11 +8,11 @@ FBXHeaderExtension:  {
 		Version: 1000
 		Year: 2025
 		Month: 11
-		Day: 4
-		Hour: 19
-		Minute: 18
-		Second: 6
-		Millisecond: 646
+		Day: 12
+		Hour: 13
+		Minute: 37
+		Second: 47
+		Millisecond: 803
 	}
 	Creator: "FBX SDK/FBX Plugins version 2020.3.6"
 	SceneInfo: "SceneInfo::GlobalInfo", "UserData" {
@@ -34,15 +34,15 @@ FBXHeaderExtension:  {
 			P: "Original|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "Original|ApplicationName", "KString", "", "", "Maya"
 			P: "Original|ApplicationVersion", "KString", "", "", "2025"
-			P: "Original|DateTime_GMT", "DateTime", "", "", "05/11/2025 03:18:06.645"
+			P: "Original|DateTime_GMT", "DateTime", "", "", "12/11/2025 21:37:47.798"
 			P: "Original|FileName", "KString", "", "", "C:\Users\Absolute Gaming\Documents\Digital Asset Production\Fatal-Enterprise\Modeling\Light_Switch.fbx"
 			P: "LastSaved", "Compound", "", ""
 			P: "LastSaved|ApplicationVendor", "KString", "", "", "Autodesk"
 			P: "LastSaved|ApplicationName", "KString", "", "", "Maya"
 			P: "LastSaved|ApplicationVersion", "KString", "", "", "2025"
-			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "05/11/2025 03:18:06.645"
-			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\Absolute Gaming\Documents\Digital Asset Production\Fatal-Enterprise"
-			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Users\Absolute Gaming\Documents\Digital Asset Production\Fatal-Enterprise\Modeling\FatalEnterprise_Chase_Jeden\scenes\FatalEnterprise_Chase_Jeden.0022.ma"
+			P: "LastSaved|DateTime_GMT", "DateTime", "", "", "12/11/2025 21:37:47.798"
+			P: "Original|ApplicationActiveProject", "KString", "", "", "C:\Users\Absolute Gaming\Documents\maya\projects"
+			P: "Original|ApplicationNativeFile", "KString", "", "", "C:\Users\Absolute Gaming\Documents\Digital Asset Production\Fatal-Enterprise\Modeling\FatalEnterprise_Chase_Jeden\scenes\FatalEnterprise_Chase_Jeden.0054.ma"
 		}
 	}
 }
@@ -77,7 +77,7 @@ GlobalSettings:  {
 
 Documents:  {
 	Count: 1
-	Document: 1950963607776, "", "Scene" {
+	Document: 2208365553216, "", "Scene" {
 		Properties70:  {
 			P: "SourceObject", "object", "", ""
 			P: "ActiveAnimStackName", "KString", "", "", "Take 001"
@@ -235,7 +235,7 @@ Definitions:  {
 ;------------------------------------------------------------------
 
 Objects:  {
-	Geometry: 1948601259840, "Geometry::", "Mesh" {
+	Geometry: 2207729708992, "Geometry::", "Mesh" {
 		Vertices: *96 {
 			a: 86.6025390625,-100,-49.9999389648438,50,-100,-86.6024780273438,0,-100,-99.9999694824219,-50,-100,-86.6024780273438,-86.6025390625,-100,-50,-100.000015258789,-100,3.0517578125e-05,-86.6025543212891,-100,49.9999389648438,-50,-100,86.6026000976562,0,-100,100,50.0000305175781,-100,86.6025390625,86.6025390625,-100,50,100.000061035156,-100,3.0517578125e-05,86.6025390625,100,-49.9999389648438,50,100,-86.6024780273438,0,100,-99.9999694824219,-50,100,-86.6024780273438,-86.6025390625,100,-50,-100.000015258789,100,3.0517578125e-05,-86.6025543212891,100,49.9999389648438,-50,100,86.6026000976562,0,100,100,50.0000305175781,100,86.6025390625,86.6025390625,100,50,100.000061035156,100,3.0517578125e-05,0,-100,0,0,100,0,220.933776855469,-100,196.009887695312,250.291198730469,-100,150.986022949219,250.291198730469,100,150.986022949219,220.933776855469,100,196.009887695312,272.507507324219,-100,106.681762695312,272.507507324219,100,106.681762695312
 		} 
@@ -298,25 +298,25 @@ Objects:  {
 			}
 		}
 	}
-	Model: 1948897231104, "Model::Light_Switch", "Mesh" {
+	Model: 2208404698544, "Model::Light_Switch", "Mesh" {
 		Version: 232
 		Properties70:  {
-			P: "RotationOffset", "Vector3D", "Vector", "",2.16931070754487,0,-0.775018724222933
-			P: "RotationPivot", "Vector3D", "Vector", "",-2.95837106177763,0,-4.85710140822328
-			P: "ScalingOffset", "Vector3D", "Vector", "",303.068665004568,0,497.583030945756
-			P: "ScalingPivot", "Vector3D", "Vector", "",-306.027036066346,0,-502.440132353979
+			P: "RotationOffset", "Vector3D", "Vector", "",1.55239880810649e-14,0,-2.27731292588964e-15
+			P: "RotationPivot", "Vector3D", "Vector", "",-1.55847831447597e-14,-0.513201475143433,3.83116371524571e-15
+			P: "ScalingOffset", "Vector3D", "Vector", "",3.44114473000187e-10,99.4867945569246,2.53923383214945e-10
+			P: "ScalingPivot", "Vector3D", "Vector", "",-3.44130057783332e-10,-99.9999960320681,-2.53919552051229e-10
 			P: "RotationActive", "bool", "", "",1
 			P: "InheritType", "enum", "", "",1
 			P: "ScalingMax", "Vector3D", "Vector", "",0,0,0
 			P: "DefaultAttributeIndex", "int", "Integer", "",0
-			P: "Lcl Translation", "Lcl Translation", "", "A",2.95837106177763,0,4.85710140822328
+			P: "Lcl Translation", "Lcl Translation", "", "A",1.55847831447597e-14,0.513201475143433,-3.83116371524571e-15
 			P: "Lcl Scaling", "Lcl Scaling", "", "A",0.00966702517465948,0.00513201495506947,0.00966702517465948
 			P: "currentUVSet", "KString", "", "U", "map1"
 		}
 		Shading: T
 		Culling: "CullingOff"
 	}
-	Material: 1950956141904, "Material::standardSurface1", "" {
+	Material: 2209192852016, "Material::standardSurface1", "" {
 		Version: 102
 		ShadingModel: "unknown"
 		MultiLayer: 0
@@ -369,7 +369,7 @@ Objects:  {
 			P: "Maya|normalCameraFactor", "double", "Number", "",0
 		}
 	}
-	Implementation: 1949382437392, "Implementation::standardSurface1_Implementation", "" {
+	Implementation: 2209191148160, "Implementation::standardSurface1_Implementation", "" {
 		Version: 100
 		Properties70:  {
 			P: "ShaderLanguage", "KString", "", "", "StandardSSL"
@@ -378,7 +378,7 @@ Objects:  {
 			P: "RootBindingName", "KString", "", "", "root"
 		}
 	}
-	BindingTable: 1948599805296, "BindingTable::root 5", "" {
+	BindingTable: 2208601731792, "BindingTable::root 1", "" {
 		Version: 100
 		Properties70:  {
 			P: "TargetName", "KString", "", "", "root"
@@ -435,17 +435,17 @@ Objects:  {
 Connections:  {
 	
 	;Model::Light_Switch, Model::RootNode
-	C: "OO",1948897231104,0
+	C: "OO",2208404698544,0
 	
 	;Material::standardSurface1, Implementation::standardSurface1_Implementation
-	C: "OO",1950956141904,1949382437392
+	C: "OO",2209192852016,2209191148160
 	
-	;BindingTable::root 5, Implementation::standardSurface1_Implementation
-	C: "OO",1948599805296,1949382437392
+	;BindingTable::root 1, Implementation::standardSurface1_Implementation
+	C: "OO",2208601731792,2209191148160
 	
 	;Geometry::, Model::Light_Switch
-	C: "OO",1948601259840,1948897231104
+	C: "OO",2207729708992,2208404698544
 	
 	;Material::standardSurface1, Model::Light_Switch
-	C: "OO",1950956141904,1948897231104
+	C: "OO",2209192852016,2208404698544
 }
