@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: FatalEnterprise_Chase_Jeden.0055.ma
-//Last modified: Wed, Nov 12, 2025 01:37:58 PM
+//Last modified: Wed, Nov 12, 2025 01:51:15 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires "stereoCamera" "10.0";
@@ -14,11 +14,11 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26100)";
-fileInfo "UUID" "D6CC8018-4C0A-814E-B289-B3853B8E6FEC";
+fileInfo "UUID" "EA7F8070-4E57-91F3-A5B3-9A88F8D5B788";
 createNode transform -s -n "persp";
 	rename -uid "9D064EED-43A0-1E9E-60E9-4693022F16BF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.29555906485133265 -0.62197922738162614 0.34602476533256121 ;
+	setAttr ".t" -type "double3" 0.10802422339474087 -0.23056381891870106 0.16357859884100071 ;
 	setAttr ".r" -type "double3" 1507.1999999970606 0 -1054.3999999998093 ;
 	setAttr ".rpt" -type "double3" -1.5528123140344407e-19 -5.6955579776409258e-19 1.4684514526755924e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -28,7 +28,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 0.74991910751600777;
+	setAttr ".coi" 0.27910922825494799;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
