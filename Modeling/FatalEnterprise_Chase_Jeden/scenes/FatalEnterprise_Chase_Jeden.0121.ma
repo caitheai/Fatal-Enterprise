@@ -1,6 +1,6 @@
 //Maya ASCII 2025ff03 scene
 //Name: FatalEnterprise_Chase_Jeden.0121.ma
-//Last modified: Sun, Dec 14, 2025 12:16:49 PM
+//Last modified: Sun, Dec 14, 2025 12:25:21 PM
 //Codeset: 1252
 requires maya "2025ff03";
 requires -nodeType "sweepMeshCreator" -dataType "sweepMeshData" -dataType "sweepProfileData"
@@ -16,12 +16,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202407121012-8ed02f4c99";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 26200)";
-fileInfo "UUID" "868C269A-41B8-67D5-38D8-B190ABDA037E";
+fileInfo "UUID" "A26BA73E-4B7D-9310-A26B-F99361748AAE";
 createNode transform -s -n "persp";
 	rename -uid "9D064EED-43A0-1E9E-60E9-4693022F16BF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.5994887399426991 -2.062134808988608 2.9299966264358184 ;
-	setAttr ".r" -type "double3" 786.59999999968477 0 1363.19999999998 ;
+	setAttr ".t" -type "double3" -8.8825821297318939 -0.23422646515935175 8.0548348984722242 ;
+	setAttr ".r" -type "double3" 771.59999999910201 -3.180554681463516e-15 628.3999999999005 ;
 	setAttr ".rpt" -type "double3" 4.2009679180064791e-17 -1.5341822646046349e-16 8.6084812012627676e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "05CA8D05-4244-62EB-A242-A19A9F543FFB";
@@ -31,12 +31,12 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr ".ncp" 0.001;
 	setAttr ".fcp" 100;
 	setAttr ".fd" 0.05;
-	setAttr ".coi" 5.2533893193002363;
+	setAttr ".coi" 11.488025503877457;
 	setAttr ".ow" 0.1;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" -0.21873283386230469 -85.572982788085938 147.89834594726562 ;
+	setAttr ".tp" -type "double3" -0.096113204956054688 0 89.705833680927753 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "AEC451E5-4557-8B94-D207-F7BCAE74EBD7";
@@ -136799,6 +136799,18 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
+	setAttr ".pv" -type "double2" 0.10056252777576447 0.67291995882987976 ;
+	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr ".cuvs" -type "string" "map1";
+	setAttr ".dcc" -type "string" "Ambient+Diffuse";
+	setAttr ".covm[0]"  0 1 1;
+	setAttr ".cdvm[0]"  0 1 1;
+createNode mesh -n "polySurfaceShape141" -p "Clothes_Rack";
+	rename -uid "3C98AF25-447E-FE02-1C9A-DAA8CFE31749";
+	setAttr -k off ".v";
+	setAttr ".io" yes;
+	setAttr ".vir" yes;
+	setAttr ".vif" yes;
 	setAttr -s 14 ".gtag";
 	setAttr ".gtag[0].gtagnm" -type "string" "back";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 10 "f[2]" "f[670]" "f[697]" "f[705:706]" "f[712:714]" "f[727:728]" "f[757]" "f[765:766]" "f[772:774]" "f[787:788]";
@@ -136828,7 +136840,7 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 	setAttr ".gtag[12].gtagcmp" -type "componentList" 24 "f[1]" "f[621]" "f[628]" "f[630]" "f[633]" "f[640]" "f[642]" "f[645]" "f[652]" "f[654]" "f[657]" "f[664]" "f[666]" "f[673]" "f[680:681]" "f[683]" "f[690]" "f[693]" "f[699:700]" "f[722:726]" "f[743:753]" "f[759:760]" "f[782:786]" "f[803:812]";
 	setAttr ".gtag[13].gtagnm" -type "string" "topRing";
 	setAttr ".gtag[13].gtagcmp" -type "componentList" 2 "e[1500:1509]" "e[1620:1629]";
-	setAttr ".pv" -type "double2" 0.5 0.47926038503646851 ;
+	setAttr ".pv" -type "double2" 0.10056252777576447 0.67291995882987976 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 1289 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.21947592 0.71434933 0.21851274
@@ -137171,9 +137183,9 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 	setAttr ".vt[0:165]"  -0.035423607 -0.86062652 1.69857883 -0.049078293 -0.86190665 1.68779361
 		 -0.024487648 -0.87337631 1.69095266 -0.038142372 -0.87465662 1.6801672 -0.016112251 -0.85881591 1.68332636
 		 -0.029767409 -0.86009622 1.67254114 -0.027048197 -0.8460663 1.69095266 -0.040703069 -0.84734654 1.6801672
-		 0.011546864 -0.84244752 1.72143614 0.0031715513 -0.85700792 1.72906256 0.014107197 -0.86975771 1.72143614
+		 0.011546864 -0.84244752 1.72143614 0.0031715513 -0.85700792 1.72906256 0.014107198 -0.86975771 1.72143614
 		 0.022482872 -0.85519731 1.71381009 0.018666375 -0.84439391 1.76183081 0.0086396243 -0.8564952 1.76183081
-		 0.020741014 -0.86652213 1.76183081 0.030767864 -0.85442048 1.76183081 -0.0012820745 -0.84609586 1.78585005
+		 0.020741014 -0.86652213 1.76183081 0.030767865 -0.85442048 1.76183081 -0.0012820745 -0.84609586 1.78585005
 		 -0.0081705665 -0.85807127 1.77957797 0.00082390546 -0.86855781 1.78585005 0.0077123665 -0.85658216 1.7921226
 		 -0.061643884 -0.85264206 1.78685617 -0.060673222 -0.86299396 1.77868009 -0.059702754 -0.87334573 1.78685617
 		 -0.060673539 -0.86299396 1.79503238 -0.092833303 -0.86097318 1.75781775 -0.088835336 -0.86563432 1.75502956
@@ -137181,9 +137193,9 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 -0.16180633 -0.88886863 0.26442477 -0.16353676 -0.88903093 0.34495246 -0.17103523 -0.88973391 0.54598212
 		 -0.16526714 -0.88919318 0.61839902 -0.17103523 -0.88973391 0.65721452 -0.19756833 -0.89222151 0.71283078
 		 -0.19929874 -0.89238381 0.79162049 -0.20697418 -0.89310348 0.87826461 -0.21174267 -0.89355052 0.96255827
-		 -0.20697418 -0.89310348 1.044936061 -0.20268257 -0.89270109 1.13306117 -0.20745105 -0.89314812 1.20154965
-		 -0.18408543 -0.89095759 1.30260634 -0.18217807 -0.89077866 1.31601667 -0.18360858 -0.89091271 1.33421648
-		 -0.20172884 -0.89261168 1.32511663 -0.2088816 -0.89328229 1.25614917 -0.21555749 -0.89390826 1.20538139
+		 -0.20697418 -0.89310348 1.044936061 -0.20268257 -0.89270109 1.13306117 -0.20745106 -0.89314812 1.20154965
+		 -0.18408543 -0.89095759 1.30260634 -0.18217808 -0.89077866 1.31601667 -0.18360859 -0.89091271 1.33421648
+		 -0.20172884 -0.89261168 1.32511663 -0.2088816 -0.89328229 1.25614917 -0.2155575 -0.89390826 1.20538139
 		 -0.21317324 -0.89368469 1.10528266 -0.22271027 -0.89457893 0.94771105 -0.22032596 -0.89435524 0.91849577
 		 -0.23129356 -0.8953836 0.9127484 -0.28994611 -0.90088266 0.91322738 -0.30329785 -0.90213454 0.91849577
 		 -0.30282101 -0.90208977 0.96064258 -0.29662198 -0.90150857 1.0032681227 -0.31521907 -0.90325224 1.13737178
@@ -137198,7 +137210,7 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 0.30010444 -0.84556109 0.97567034 0.21785446 -0.85327262 0.97391272 0.21479206 -0.85355979 0.98621643
 		 0.21172954 -0.85384697 1.23492718 0.237542 -0.85142684 1.30523419 0.23889561 -0.85129988 1.35043824
 		 0.21558776 -0.85348511 1.44240665 0.21947235 -0.85312104 1.49925959 0.19616449 -0.85530627 1.45912814
-		 0.17069836 -0.85769379 1.36514127 0.16216078 -0.85849434 1.28453612 0.18094344 -0.85673326 1.2227962
+		 0.17069836 -0.85769379 1.36514127 0.16216078 -0.85849434 1.28453612 0.18094343 -0.85673326 1.2227962
 		 0.17866677 -0.85694689 1.16562939 0.16386829 -0.85833418 1.11360765 0.15817657 -0.85886788 1.085024238
 		 0.16179757 -0.85852832 1.035898566 0.15644962 -0.85902983 1.020379186 0.16631651 -0.85810465 0.99505323
 		 0.18495399 -0.8563574 0.96367109 0.1876948 -0.85610032 0.90365952 0.18111691 -0.85671705 0.77813065
@@ -137211,7 +137223,7 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 -0.026636191 -0.87619555 0.74014163 -0.031569675 -0.87665802 0.68233222 -0.043629203 -0.8777886 0.64269155
 		 -0.033762299 -0.87686366 0.57332045 -0.028828854 -0.87640101 0.5347808 -0.031021504 -0.87660658 0.48578054
 		 -0.037051268 -0.87717193 0.43237564 -0.042532884 -0.87768584 0.35419548 -0.0507553 -0.87845671 0.28537479
-		 -0.16953555 -0.8895933 0.50577617 -0.16773587 -0.88942456 0.45752898 -0.1652164 -0.88918829 0.38998309
+		 -0.16953555 -0.8895933 0.50577617 -0.16773586 -0.88942456 0.45752898 -0.1652164 -0.88918829 0.38998309
 		 -0.072271205 -0.88047403 0.24965633 -0.14127649 -0.88694382 0.24383436 -0.014028523 -0.87501341 0.82437807
 		 0.0051571368 -0.87321454 0.24039675 -0.20935848 -0.89332694 1.0037472248 -0.21102743 -0.8934834 0.97491503
 		 -0.29447612 -0.90130734 1.53776658 0.34001416 -0.84181923 1.55967069 -0.052707158 -0.84229302 0.26442477
@@ -137235,14 +137247,14 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 0.31422633 -0.8078903 1.12683046 0.30591393 -0.80866969 0.97918582 0.29672635 -0.80953109 0.97567034
 		 0.21447636 -0.8172425 0.97391272 0.21141395 -0.81752986 0.98621643 0.20835146 -0.81781691 1.23492718
 		 0.23416395 -0.8153969 1.30523419 0.23551746 -0.81526977 1.35043824 0.21220963 -0.81745511 1.44240665
-		 0.2160943 -0.81709105 1.49925959 0.19278641 -0.81927627 1.45912814 0.1673203 -0.8216638 1.36514127
+		 0.2160943 -0.81709105 1.49925959 0.19278641 -0.81927627 1.45912814 0.16732031 -0.8216638 1.36514127
 		 0.15878271 -0.82246435 1.28453612 0.17756537 -0.82070327 1.2227962 0.17528868 -0.82091689 1.16562939
-		 0.16049021 -0.82230425 1.11360765 0.15479851 -0.82283783 1.085024238 0.15841947 -0.82249832 1.035898566
+		 0.16049021 -0.82230425 1.11360765 0.15479851 -0.82283783 1.085024238 0.15841946 -0.82249832 1.035898566
 		 0.15307155 -0.82299978 1.020379186 0.16293846 -0.82207471 0.99505323 0.18157595 -0.82032728 0.96367109
 		 0.18431671 -0.82007027 0.90365952 0.17773882 -0.82068712 0.77813065 0.14978258 -0.82330811 0.67132097
 		 0.14156015 -0.82407898 0.59148902 0.1300488 -0.8251583 0.49348843 0.10702601 -0.827317 0.36630785
 		 0.091677502 -0.82875597 0.27161071 0.079069793 -0.82993799 0.24077904 0.037409525 -0.83384395 0.23857677
-		 -0.033851419 -0.84052521 0.24793637 -0.036044069 -0.84073073 0.257296 -0.027821654 -0.83995986 0.43127456
+		 -0.033851419 -0.84052521 0.24793637 -0.036044069 -0.84073073 0.257296 -0.027821653 -0.83995986 0.43127456
 		 -0.020695539 -0.83929169 0.52156717 -0.0020580792 -0.83754438 0.58928674 -0.0075396919 -0.83805829 0.67242211
 		 -0.016310258 -0.8388806 0.70325369 -0.015489375 -0.83880371 0.94550234 -0.034947749 -0.84062791 0.94550234
 		 -0.043170165 -0.84139895 0.93449104 -0.038784873 -0.84098768 0.85520965 -0.030014286 -0.84016556 0.74014163
@@ -137262,12 +137274,12 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 -0.17154181 -0.86099589 0.61179239 -0.1754514 -0.88258684 0.65137571 -0.1789148 -0.87229937 0.64748091
 		 -0.177424 -0.86154729 0.65137571 -0.2025094 -0.88512373 0.70809221 -0.20634384 -0.87487102 0.70490801
 		 -0.20448202 -0.8640843 0.70809221 -0.20427406 -0.88528913 0.7884407 -0.20816703 -0.8750419 0.78627747
-		 -0.20624667 -0.86424971 0.7884407 -0.21196038 -0.88600981 0.87520719 -0.21605019 -0.87578112 0.87497979
+		 -0.20624666 -0.86424971 0.7884407 -0.21196038 -0.88600981 0.87520719 -0.21605019 -0.87578112 0.87497979
 		 -0.21393295 -0.86497039 0.87520719 -0.21696423 -0.8864789 0.96276015 -0.22105031 -0.87624985 0.96289879
 		 -0.21893683 -0.86543947 0.96276015 -0.21210137 -0.88602293 1.046767831 -0.21611479 -0.8757872 1.048020959
 		 -0.21407394 -0.8649835 1.046767831 -0.21453279 -0.88625097 1.0047639608 -0.21858467 -0.87601858 1.0054610968
-		 -0.21650539 -0.86521155 1.0047639608 -0.20772479 -0.88561273 1.13663638 -0.21165343 -0.87536883 1.13906038
-		 -0.20969743 -0.86457324 1.13663638 -0.21258765 -0.88606858 1.20647979 -0.21654291 -0.87582719 1.20978117
+		 -0.21650539 -0.86521155 1.0047639608 -0.20772478 -0.88561273 1.13663638 -0.21165343 -0.87536883 1.13906038
+		 -0.20969744 -0.86457324 1.13663638 -0.21258764 -0.88606858 1.20647979 -0.21654291 -0.87582719 1.20978117
 		 -0.21456024 -0.86502916 1.20647979 -0.18875974 -0.88383454 1.3095355 -0.19235517 -0.87355959 1.31408787
 		 -0.19073236 -0.86279511 1.3095355 -0.18681465 -0.88365209 1.32321131 -0.19037695 -0.87337404 1.32792246
 		 -0.18878724 -0.86261278 1.32321131 -0.18827347 -0.88378906 1.34177125 -0.19184113 -0.8735112 1.3466928
@@ -137275,7 +137287,7 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 -0.20872486 -0.86448205 1.33249116 -0.21325853 -0.88613158 1.26975703 -0.21767212 -0.87593305 1.27016413
 		 -0.21523112 -0.86509216 1.26975703 -0.22085448 -0.88684374 1.21038723 -0.22491039 -0.87661177 1.21373177
 		 -0.22282708 -0.8658042 1.21038723 -0.21842308 -0.88661569 1.10830832 -0.222498 -0.87638551 1.11036336
-		 -0.22039565 -0.86557627 1.10830832 -0.22814873 -0.88752747 0.94761932 -0.23237677 -0.87731177 0.94755656
+		 -0.22039564 -0.86557627 1.10830832 -0.22814873 -0.88752747 0.94761932 -0.23237677 -0.87731177 0.94755656
 		 -0.23012134 -0.8664881 0.94761932 -0.22571729 -0.88729966 0.91782594 -0.2299131 -0.87708068 0.91736746
 		 -0.22768992 -0.86626023 0.91782594 -0.23690183 -0.88834834 0.91196501 -0.24123813 -0.8781426 0.91143006
 		 -0.23887439 -0.8673088 0.91196501 -0.29671469 -0.89395607 0.91245347 -0.30178902 -0.88381976 0.91193175
@@ -137319,18 +137331,18 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 0.21882032 -0.84562087 1.45210147 0.22031674 -0.83486849 1.45821798 0.21684769 -0.82458144 1.45210147
 		 0.22278179 -0.84524947 1.51007938 0.22427833 -0.83449692 1.51677501 0.22080913 -0.82420999 1.51007938
 		 0.1990128 -0.84747797 1.46915376 0.2002601 -0.83674896 1.47545993 0.1970402 -0.82643861 1.46915376
-		 0.17304283 -0.84991282 1.37330782 0.17403615 -0.83920759 1.378613 0.17107025 -0.82887328 1.37330782
-		 0.16433641 -0.85072923 1.29110813 0.16526347 -0.84003007 1.29547668 0.16236381 -0.8296898 1.29110813
-		 0.18349063 -0.84893328 1.22814643 0.1846911 -0.83820862 1.23174655 0.18151803 -0.82789397 1.22814643
+		 0.17304283 -0.84991282 1.37330782 0.17403616 -0.83920759 1.378613 0.17107025 -0.82887328 1.37330782
+		 0.16433641 -0.85072923 1.29110813 0.16526346 -0.84003007 1.29547668 0.16236381 -0.8296898 1.29110813
+		 0.18349063 -0.84893328 1.22814643 0.1846911 -0.83820862 1.23174655 0.18151802 -0.82789397 1.22814643
 		 0.18116888 -0.8491509 1.16984892 0.18236372 -0.83842683 1.17272031 0.17919628 -0.82811159 1.16984892
-		 0.16607769 -0.85056597 1.1167978 0.16709313 -0.83985841 1.1189909 0.16410512 -0.82952654 1.1167978
+		 0.16607769 -0.85056597 1.1167978 0.16709313 -0.83985841 1.1189909 0.16410513 -0.82952654 1.1167978
 		 0.16027334 -0.8511101 1.087649107 0.16121952 -0.84040922 1.08946085 0.15830076 -0.83007067 1.087649107
-		 0.16396596 -0.85076386 1.037551522 0.16496974 -0.84005761 1.038697124 0.16199335 -0.82972443 1.037551522
+		 0.16396597 -0.85076386 1.037551522 0.16496974 -0.84005761 1.038697124 0.16199335 -0.82972443 1.037551522
 		 0.15851223 -0.85127527 1.021725059 0.1594459 -0.84057558 1.022659421 0.15653962 -0.83023584 1.021725059
-		 0.16857433 -0.85033178 0.99589801 0.16964345 -0.83961946 0.9964847 0.16660172 -0.82929248 0.99589801
+		 0.16857433 -0.85033178 0.99589801 0.16964346 -0.83961946 0.9964847 0.16660172 -0.82929248 0.99589801
 		 0.18758053 -0.84854978 0.96389508 0.18890141 -0.83781385 0.96405029 0.18560793 -0.82751054 0.96389508
 		 0.19037555 -0.84828782 0.90269625 0.1917308 -0.83754849 0.90202957 0.18840294 -0.82724839 0.90269625
-		 0.18366748 -0.84891677 0.77468389 0.1849084 -0.83818817 0.77232438 0.1816949 -0.82787734 0.77468389
+		 0.18366748 -0.84891677 0.77468389 0.1849084 -0.83818817 0.77232438 0.18169491 -0.82787734 0.77468389
 		 0.15515822 -0.8515898 0.66576123 0.15599072 -0.84089941 0.66201645 0.15318562 -0.83055031 0.66576123
 		 0.14677313 -0.85237581 0.58434999 0.1474641 -0.84169883 0.57963121 0.14480051 -0.83133638 0.58434999
 		 0.13503399 -0.85347641 0.48441055 0.13553257 -0.84281754 0.47857502 0.13306141 -0.83243698 0.48441055
@@ -137339,7 +137351,7 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 	setAttr ".vt[498:663]" 0.093930967 -0.8361057 0.25814331 0.083046474 -0.85835069 0.22670169
 		 0.082826748 -0.84775895 0.21840885 0.081073865 -0.83731127 0.22670169 0.040562037 -0.86233383 0.22445588
 		 0.039856844 -0.85178787 0.21613589 0.03858944 -0.84129453 0.22445588 -0.032108702 -0.86914736 0.23400067
-		 -0.033646226 -0.85867929 0.22576375 -0.034081303 -0.84810793 0.23400067 0.0042266753 -0.86574066 0.22631188
+		 -0.033646226 -0.85867929 0.22576374 -0.034081303 -0.84810793 0.23400067 0.0042266753 -0.86574066 0.22631188
 		 0.0031060886 -0.85523343 0.21800627 0.0022540712 -0.84470123 0.22631188 -0.034344744 -0.86935699 0.24354544
 		 -0.035909954 -0.85889155 0.23538916 -0.036317345 -0.84831756 0.24354544 -0.026644658 -0.868635 0.40647224
 		 -0.02763094 -0.85811532 0.40647224 -0.028617254 -0.84759557 0.40647224 -0.018692564 -0.8678894 0.51304483
@@ -137347,7 +137359,7 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 -0.00087448838 -0.85560668 0.57732999 -0.001658957 -0.84506804 0.58210415 -0.0052764248 -0.86663169 0.66688418
 		 -0.0065424158 -0.85613799 0.66312563 -0.0072490312 -0.84559226 0.66688418 -0.014220531 -0.86747015 0.69832581
 		 -0.015606847 -0.85698789 0.6949594 -0.016193125 -0.84643084 0.69832581 -0.013383417 -0.86739182 0.94536692
-		 -0.014769106 -0.85690951 0.94527191 -0.015356012 -0.84635234 0.94536692 -0.015306361 -0.86757195 0.81829071
+		 -0.014769106 -0.85690951 0.94527191 -0.015356013 -0.84635234 0.94536692 -0.015306361 -0.86757195 0.81829071
 		 -0.016734717 -0.85709363 0.8182919 -0.017278954 -0.84653258 0.81829071 -0.033226725 -0.86925226 0.94536692
 		 -0.034881994 -0.85879517 0.94527191 -0.035199322 -0.84821272 0.94536692 -0.041611806 -0.87003827 0.9341377
 		 -0.043380708 -0.85959196 0.93389022 -0.043584395 -0.84899884 0.9341377 -0.036942516 -0.86960053 0.85070008
@@ -137432,7 +137444,7 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 0.02213422 -0.58900744 0.13240214 0.0078200316 -0.6143409 0.13240214 0.014977238 -0.64254469 0.13240214
 		 0.040871996 -0.66284609 0.13240214 0.075613379 -0.66749036 0.13240214 0.10593142 -0.65470368 0.13240214
 		 0.12024556 -0.62937021 0.13240214 0.064032808 -0.62185568 0.13240214 -0.095836297 -0.2088262 0.045631763
-		 -0.064887449 -0.18517616 0.045631763 -0.18746187 -0.18640274 -0.00091567502 -0.13930473 -0.14960282 -0.00091567502
+		 -0.064887449 -0.18517616 0.045631763 -0.18746187 -0.18640274 -0.00091567502 -0.13930473 -0.14960283 -0.00091567502
 		 0.10097484 -0.20734902 0.05637845 0.12462477 -0.23829792 0.05637845 0.15558116 -0.23226146 -0.00091567502
 		 0.11878123 -0.18410432 -0.00091567502 -0.076992944 -0.27573055 0.045631763 -0.1006429 -0.24478169 0.045631763
 		 -0.19494109 -0.24235046 -0.00091567502 -0.15814118 -0.29050767 -0.00091567502 0.11981817 -0.27425346 0.05637845
@@ -137440,18 +137452,18 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 -0.19803435 -0.21346319 -0.00091567502 -0.10263082 -0.22621693 0.045631763 -0.10097551 -0.22643818 0.045631763
 		 0.12495735 -0.25664139 0.05637845 0.12661274 -0.2568627 0.05637845 0.15867442 -0.26114875 -0.00091567502
 		 0.093286455 -0.25240758 -0.00091567502 -0.13264638 -0.22220436 -0.00091567502 -0.15856548 -0.19248219 0.027731385
-		 -0.16831498 -0.21743611 0.027731385 -0.16546248 -0.24407464 0.027731385 -0.13152725 -0.28848305 0.027731385
+		 -0.16831498 -0.21743611 0.027731385 -0.16546248 -0.24407463 0.027731385 -0.13152725 -0.28848305 0.027731385
 		 0.10646805 -0.32029879 0.027731385 0.15087648 -0.28636357 0.027731385 0.16062593 -0.26140964 0.027731385
 		 0.15777345 -0.2347711 0.027731385 0.12383821 -0.19036272 0.027731385 -0.1141571 -0.15854698 0.027731385
 		 0.018043697 -0.19626258 0.045631763 0.0048405621 -0.17445488 0.027731385 -0.010261736 -0.16685356 -0.00091567502
 		 -0.019679965 -0.23730597 -0.00091567502 -0.029098203 -0.30775836 -0.00091567502 -0.01252959 -0.30439097 0.027731385
 		 0.0059381914 -0.28681695 0.045631763 0.011990909 -0.24153981 0.045631763 0.11308838 -0.2278077 0.040508777
 		 0.087193616 -0.2075064 0.040508777 0.052452218 -0.20286213 0.040508777 0.02213422 -0.21564873 0.040508777
-		 0.0078200316 -0.24098223 0.040508777 0.014977235 -0.26918605 0.040508777;
+		 0.0078200316 -0.24098223 0.040508777 0.014977234 -0.26918605 0.040508777;
 	setAttr ".vt[830:895]" 0.040872008 -0.28948733 0.040508777 0.075613379 -0.29413164 0.040508777
 		 0.10593142 -0.28134501 0.040508777 0.12024556 -0.25601152 0.040508777 0.11308838 -0.2278077 0.13240214
 		 0.087193616 -0.2075064 0.13240214 0.052452218 -0.20286213 0.13240214 0.02213422 -0.21564873 0.13240214
-		 0.0078200316 -0.24098223 0.13240214 0.014977235 -0.26918605 0.13240214 0.040872008 -0.28948733 0.13240214
+		 0.0078200316 -0.24098223 0.13240214 0.014977234 -0.26918605 0.13240214 0.040872008 -0.28948733 0.13240214
 		 0.075613379 -0.29413164 0.13240214 0.10593142 -0.28134501 0.13240214 0.12024556 -0.25601152 0.13240214
 		 0.064032815 -0.24849688 0.13240214 0.05439844 -0.86859775 1.62669134 0.054571439 -0.86858159 1.56734502
 		 0.054648284 -0.86857444 1.54094303 0.054696541 -0.86856985 1.52429259 0.054755136 -0.86856455 1.5042454
@@ -137469,8 +137481,8 @@ createNode mesh -n "Clothes_RackShape" -p "Clothes_Rack";
 		 0.060119227 -0.83171463 1.038307667 0.059808146 -0.83174396 1.016138792 0.059434872 -0.83177888 0.98952943
 		 0.058913425 -0.83182788 0.95236206 0.058153495 -0.83189893 0.85407472 0.057206783 -0.83198786 0.7316215
 		 0.056745652 -0.83203107 0.67197222 0.05611334 -0.83209032 0.59017873 0.05547316 -0.83215034 0.50737947
-		 0.054577962 -0.83223432 0.39157623 0.045423899 -0.83309257 0.26642671 0.025386821 -0.83497119 0.24418163
-		 0.020359851 -0.83544248 0.23944767;
+		 0.054577962 -0.83223432 0.39157623 0.045423899 -0.83309257 0.26642671 0.02538682 -0.83497119 0.24418163
+		 0.02035985 -0.83544248 0.23944767;
 	setAttr -s 1752 ".ed";
 	setAttr ".ed[0:165]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 1 1 3 0 2 4 1 3 5 0 4 6 1
 		 5 7 0 6 0 1 7 1 0 6 8 0 0 9 0 8 9 1 2 10 0 9 10 1 4 11 0 10 11 1 11 8 1 8 12 0 9 13 0
@@ -190708,20 +190720,20 @@ createNode mesh -n "SataliteShape" -p "Satalite";
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "C74AE932-4986-B4FB-A375-5D8374F2EC82";
+	rename -uid "77A1A67E-4996-7B29-DD3B-8DA737E00FD5";
 	setAttr -s 7 ".lnk";
 	setAttr -s 7 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "11752644-4C6A-D66C-9DFD-7EA627D43E7C";
+	rename -uid "361FE9CA-4439-9640-A764-668BF19DC47C";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "E78B13B7-45A1-C9F4-553E-F992E63ADA6D";
+	rename -uid "79287375-45B1-976E-8F3A-C1944A45ECFB";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "C3E5771D-45FE-5F8C-24B4-7EA8F32D0164";
+	rename -uid "E52B1BA5-412B-A089-C222-46BB2F202070";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "DAAF1E47-4276-6318-C7A8-D68187860218";
 	setAttr ".ufem" -type "stringArray" 0  ;
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D01A72BD-45F1-23AA-160B-CDA54E371ED8";
+	rename -uid "C7D7E5EE-4300-47F4-B31F-F49735C9A9A1";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "9C24B463-4267-52FC-EE69-8982409077AB";
 	setAttr ".g" yes;
@@ -190767,8 +190779,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n"
 		+ "                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n"
 		+ "                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -bluePencil 1\n                -greasePencils 0\n                -excludeObjectPreset \"All\" \n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n"
-		+ "            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polySelectionConstraintPanel\" (localizedPanelLabel(\"Polygon Selection Constraints\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Polygon Selection Constraints\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n"
-		+ "\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
 		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2967\\n    -height 1809\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 1\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 1\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -bluePencil 1\\n    -greasePencils 0\\n    -excludeObjectPreset \\\"All\\\" \\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 2967\\n    -height 1809\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 20 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
@@ -207623,6 +207634,38 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
 	setAttr ".tgi[0].ni[7].x" 564.28570556640625;
 	setAttr ".tgi[0].ni[7].y" 121.42857360839844;
 	setAttr ".tgi[0].ni[7].nvs" 1923;
+createNode polyDelEdge -n "polyDelEdge56";
+	rename -uid "9135C13F-46F2-C95D-FE92-889A3202F684";
+	setAttr ".ics" -type "componentList" 1 "e[1699]";
+	setAttr ".cv" yes;
+createNode polySplit -n "polySplit119";
+	rename -uid "4455A210-4C5C-B53A-FB1F-F59AB6ADDC2C";
+	setAttr -s 2 ".e[0:1]"  1 0.49560899;
+	setAttr -s 2 ".d[0:1]"  -2147483475 -2147483474;
+	setAttr ".sma" 180;
+	setAttr ".m2015" yes;
+createNode polySplit -n "polySplit120";
+	rename -uid "909493F2-45DC-E3A7-6465-3A9E8DC1DF9C";
+	setAttr -s 6 ".e[0:5]"  1 0.398433 0.412945 0.43387401 0.46873701
+		 0;
+	setAttr -s 6 ".d[0:5]"  -2147483474 -2147483520 -2147482915 -2147482519 -2147482917 -2147481925;
+	setAttr ".sma" 180;
+	setAttr ".m2015" yes;
+createNode polyDelEdge -n "polyDelEdge57";
+	rename -uid "EBDCE9AE-4DA4-BE94-DD4F-FBAE193C4CD5";
+	setAttr ".ics" -type "componentList" 1 "e[1724:1748]";
+	setAttr ".cv" yes;
+createNode polySplit -n "polySplit121";
+	rename -uid "BC6470FA-459D-664E-2B56-9EABD388B89F";
+	setAttr -s 26 ".e[0:25]"  0 0.25101101 0.23198199 0.775415 0.777031
+		 0.338783 0.371418 0.411616 0.425338 0.424335 0.382505 0.38413799 0.407386 0.58393198
+		 0.59862101 0.58873802 0.61372799 0.65367103 0.65088397 0.641101 0.61210901 0.61179
+		 0.50509 0.47830001 0.49212301 1;
+	setAttr -s 26 ".d[0:25]"  -2147483284 -2147481960 -2147481959 -2147483319 -2147483317 -2147481958 
+		-2147481957 -2147481956 -2147481955 -2147481954 -2147481953 -2147481952 -2147481951 -2147483331 -2147483337 -2147483360 -2147483359 -2147483391 
+		-2147483389 -2147483387 -2147483384 -2147483381 -2147483378 -2147483375 -2147483372 -2147483369;
+	setAttr ".sma" 180;
+	setAttr ".m2015" yes;
 select -ne :time1;
 	setAttr ".o" 17;
 	setAttr ".unw" 17;
@@ -207799,6 +207842,7 @@ connectAttr "polyTweakUV287.out" "|Low_Detail_Props_UV|Bunkbed_grp|Uncombined|Bu
 		;
 connectAttr "polyTweakUV287.uvtk[0]" "|Low_Detail_Props_UV|Bunkbed_grp|Uncombined|Bunkbed_1|Pillow|outputCloth1.uvst[0].uvtw"
 		;
+connectAttr "polySplit121.out" "Clothes_RackShape.i";
 connectAttr "polyTweakUV115.out" "Main_BodyShape.i";
 connectAttr "polyTweakUV115.uvtk[0]" "Main_BodyShape.uvst[0].uvtw";
 connectAttr "polyTweakUV117.out" "Monitor_OverhangShape.i";
@@ -210878,6 +210922,11 @@ connectAttr "Ship_Props_Mat.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0
 		;
 connectAttr "lambert4SG.msg" "hyperShadePrimaryNodeEditorSavedTabsInfo.tgi[0].ni[7].dn"
 		;
+connectAttr "polySurfaceShape141.o" "polyDelEdge56.ip";
+connectAttr "polyDelEdge56.out" "polySplit119.ip";
+connectAttr "polySplit119.out" "polySplit120.ip";
+connectAttr "polySplit120.out" "polyDelEdge57.ip";
+connectAttr "polyDelEdge57.out" "polySplit121.ip";
 connectAttr "HumanBody:standardSurface2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
 connectAttr "lambert3SG.pa" ":renderPartition.st" -na;
