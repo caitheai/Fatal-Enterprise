@@ -1,0 +1,1 @@
+All Textures are 1k unless otherwise marked :)
